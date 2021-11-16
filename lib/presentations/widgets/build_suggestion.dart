@@ -9,9 +9,9 @@ class BuildSuggestion extends StatelessWidget {
       child: Container(
         width: 150,
         height: MediaQuery.of(context).size.height * 0.26,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
             color: kColorWhite,
-            borderRadius: BorderRadius.all(
+            borderRadius: const BorderRadius.all(
               Radius.circular(16),
             )),
         child: Column(
@@ -37,18 +37,18 @@ class BuildSuggestion extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Men\'s Shoes',
                         style: TextStyle(fontSize: 12, color: kColorPurple),
                       ),
-                      Text(
+                      const Text(
                         'Smoothy store',
                         style: TextStyle(
                           fontSize: 10,
                         ),
                       ),
-                      Text(
+                      const Text(
                         '25 Orders Left',
                         style: TextStyle(
                           fontSize: 8,
@@ -59,7 +59,7 @@ class BuildSuggestion extends StatelessWidget {
                 ),
                 IconButton(
                     onPressed: () {},
-                    icon: const Icon(
+                    icon: Icon(
                       Icons.bookmark_outline,
                       color: kColorPurple,
                     ))

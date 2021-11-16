@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:meeny/constants.dart';
 
 class Buildlisting extends StatelessWidget {
@@ -19,8 +20,8 @@ class Buildlisting extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.all(10).copyWith(right: 0),
-                  decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.only(
+                  decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(16),
                           topRight: Radius.circular(16)),
                       color: kColorWhite),
@@ -37,15 +38,15 @@ class Buildlisting extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: const [
+                        children: [
                           Text(
                             'Joan Lawson',
                             style: TextStyle(fontSize: 12, color: kColorPurple),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 2,
                           ),
-                          Text(
+                          const Text(
                             'joana222',
                             style: TextStyle(fontSize: 8),
                           ),
@@ -65,13 +66,13 @@ class Buildlisting extends StatelessWidget {
                                       bottomLeft: Radius.circular(16)),
                                   color: kColorOrange),
                               child: Row(
-                                children: const [
+                                children: [
                                   Icon(
                                     Icons.cloud,
                                     color: kColorWhite,
                                     size: 14,
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 5,
                                   ),
                                   Text(
@@ -107,7 +108,7 @@ class Buildlisting extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const Text(
+                      Text(
                         'Vegetables and Prawns',
                         style: TextStyle(fontSize: 14, color: kColorWhite),
                       ),
@@ -115,7 +116,7 @@ class Buildlisting extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.location_pin,
                                 color: kColorWhite,
@@ -133,22 +134,22 @@ class Buildlisting extends StatelessWidget {
                             children: [
                               GestureDetector(
                                   onTap: null,
-                                  child: const Icon(
-                                    Icons.calculate,
+                                  child: Icon(
+                                    Icons.bookmark_outline,
                                     color: kColorWhite,
                                     size: 20,
                                   )),
                               GestureDetector(
                                   onTap: null,
-                                  child: const Icon(
-                                    Icons.calculate,
+                                  child: Icon(
+                                    MdiIcons.share,
                                     color: kColorWhite,
                                     size: 20,
                                   )),
                               GestureDetector(
                                   onTap: null,
-                                  child: const Icon(
-                                    Icons.calculate,
+                                  child: Icon(
+                                    Icons.more_vert_outlined,
                                     color: kColorWhite,
                                     size: 20,
                                   )),
@@ -170,7 +171,7 @@ class Buildlisting extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text(
+                      Text(
                         "\$20",
                         style: TextStyle(color: kColorWhite),
                       ),

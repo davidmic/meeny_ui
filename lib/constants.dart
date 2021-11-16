@@ -6,10 +6,10 @@ String svgPath = "assets/svg";
 
 //COLORS
 const kBgwhite = Color(0xffefefef);
-const kColorWhite = Colors.white;
+Color kColorWhite = Colors.white;
 const kColorBlack = Colors.black;
 const kColorOrange = Color(0xfffbb03b);
-const kColorPurple = Color(0xff490057);
+Color kColorPurple = Color(0xff490057);
 const kColorShadow = Color(0x00000029);
 
 //
